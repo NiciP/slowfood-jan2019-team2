@@ -5,7 +5,7 @@ Feature: Visitor can see a list of products
 
     Background: 
         Given the following products exists
-            |   name        |  price  |  description |
+            | name          |  price  |  description |
             | Pizza         |   10    |  spicy       |
             | Garlic bread  |   3     | stinky       |  
             | Chocolate     |   5     | fattening    |

@@ -3,9 +3,11 @@
 %header
 = link_to "Sign up", new_user_registration_path 
 
+
 %ul#products
     - @products.each do |product|
         .div{id: dom_id(product)} 
             %li= product.name
             %li= "#{product.price} SEK"
             %li= product.description
+        
