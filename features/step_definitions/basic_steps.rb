@@ -21,11 +21,13 @@ When("I fill in {string} with {string}") do |field, input|
     fill_in field, with: input
 end
 
-Then("I should add the product to my cart") do
-  pending # Write code here that turns the phrase above into concrete actions
+When("I click on {string} on {string}") do |element, product_name|
+  product = Product.find_by_name(product_name)
+  within("#product_#{product.id}") do
+    click_on element
+  end
 end
 
-Then("I should see {string}") do |content|
-  expect(page).to have_content content
-end
-
+# Then("stop") do
+#   binding.pry
+# end
