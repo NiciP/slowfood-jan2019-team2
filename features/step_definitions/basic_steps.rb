@@ -28,6 +28,6 @@ When("I click on {string} on {string}") do |element, product_name|
   end
 end
 
-# Then("stop") do
-#   binding.pry
-# end
+Then("stop") do
+  binding.pry
+end

@@ -6,7 +6,7 @@
 %ul#products
 %table
     - @products.each do |product|
-        %tr{id: dom_id(product)}      
+        %tr{id: dom_id(product)} 
             %td= product.name
             %td= "#{product.price} SEK"
             %td= product.description
