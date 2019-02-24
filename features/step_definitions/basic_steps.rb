@@ -4,6 +4,12 @@ Given("the following products exists") do |table|
   end 
 end
 
+Given("the following user exists") do |user_table|
+  user_table.hashes.each do |user|
+    FactoryBot.create(:user, user)
+  end 
+end
+
 When("I am on the {string} page") do |page|
   case page
   when "product" 
