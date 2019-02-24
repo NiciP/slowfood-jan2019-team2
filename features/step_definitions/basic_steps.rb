@@ -20,9 +20,9 @@ When("I am on the {string} page") do |page|
 end  
 
 When("I click on {string}") do |button_name|
-    click_on button_name
+  click_on button_name
 end
 
 When("I fill in {string} with {string}") do |field, input|
-    fill_in field, with: input
+  fill_in field, with: input
 end
