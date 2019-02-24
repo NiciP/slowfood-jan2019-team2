@@ -24,6 +24,7 @@ group :development, :test do
   gem 'chromedriver-helper'
   gem 'selenium-webdriver'
   gem 'coveralls', require: false
+  gem 'webpacker', '~> 3.5'
 end
 
 group :development do
